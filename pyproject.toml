@@ -1,20 +1,14 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "khatulaltair"
-version = "0.1.0"
-description = "Bibliothèque personnelle de visualisations Altair stylées pour le data storytelling"
-authors = [
-    { name="TonNom" }
-]
+version = "0.2.0"
+description = "Personal styled visualization library built on top of Matplotlib"
 readme = "README.md"
-requires-python = ">=3.7"
-dependencies = [
-    "altair",
-    "pandas"
-]
+requires-python = ">=3.9"
+dependencies = ["matplotlib>=3.7"]
 
 [tool.setuptools.packages.find]
 where = ["."]
